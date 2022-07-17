@@ -12,7 +12,7 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   next();
 });
-app.listen(8090,()=>{
+app.listen(process.env.PORT || 8090,()=>{
     console.log('express Started at http://localhost:8090')
 })
 
